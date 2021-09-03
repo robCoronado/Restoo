@@ -7,6 +7,7 @@ import Search from '../pantallas/Search'
 
 
 const Stack = createStackNavigator()
+
 export default function SearchStack() {
     return (
         <Stack.Navigator>

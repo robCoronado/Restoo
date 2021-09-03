@@ -14,7 +14,7 @@ export default function TopStack() {
             <Stack.Screen
                 name="top-5"
                 component={Top}
-                options={{title: "Mejores 5"}}
+                options={{title: ""}}
             />
         
         </Stack.Navigator>

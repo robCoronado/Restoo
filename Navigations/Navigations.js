@@ -45,25 +45,22 @@ export default function Navigations() {
                 <Icon
                      type="material-community"
                      name={iconName}
-                     size={22}
+                     size={40}
                      color={color}
-
                 
                 />
 
             )
-
-            
-
+  
     }
     return (
         
         <NavigationContainer>
             <Tab.Navigator
-               initialRouteName="search"
+               initialRouteName="restaurants"
                tabBarOptions={{
-                   inactiveTintColor: "#e82428",
-                   activeTintColor:"#6abc45"
+                   inactiveTintColor: "#6c348c",
+                   activeTintColor:"#26abe0"
                }}
                
                screenOptions={({ route }) => ({
