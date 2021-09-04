@@ -17,7 +17,7 @@ export default function UserGuest() {
                 >
 
             <Image
-                source={require("../../assets/restoo.png")}
+                source={require("../../assets/restoo-removebg-preview.png")}
                 resizeMode="contain"
                 style={styles.image}
             />
