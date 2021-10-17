@@ -1,0 +1,13 @@
+AIzaSyCpuQtDZYkMgr9SDqXC5ife8eA827k7VFs
+
+Accessing credentials for robycoronado in project resto
+Google Certificate Fingerprint:     47:FE:35:CB:83:1A:D1:8D:3C:19:35:04:EA:4E:14:27:A7:CC:77:0D
+Google Certificate Hash (SHA-1):    47FE35CB831AD18D3C193504EA4E1427A7CC770D
+Google Certificate Hash (SHA-256):  54268F1FFBC68DE5493110EAE60D3EB994BEFBDDD5580E2AF24B3D94D9730C3F
+Facebook Key Hash:                  R/41y4Ma0Y08GTUE6k4UJ6fMdw0=
+
+expo build:android
+
+expo fetch:android:hashes
+
+https://logrocket.com/signup/
