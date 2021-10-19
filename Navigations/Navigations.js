@@ -45,7 +45,7 @@ export default function Navigations() {
                 <Icon
                      type="material-community"
                      name={iconName}
-                     size={40}
+                     size={20}
                      color={color}
                 
                 />
@@ -57,14 +57,14 @@ export default function Navigations() {
         
         <NavigationContainer>
             <Tab.Navigator
-               initialRouteName="restaurants"
-               tabBarOptions={{
-                   inactiveTintColor: "#6c348c",
-                   activeTintColor:"#26abe0"
-               }}
+               initialRouteName="restaurantss"
+            
                
                screenOptions={({ route }) => ({
-                   tabBarIcon:({ color }) => screenOptions (route, color)
+                   tabBarIcon:({ color }) => screenOptions (route, color),
+                   tabBarActiveTintColor: "#26abe0",
+                   tabBarInactiveTintColor: "#6c348c",
+                   tabBarStyle:[{display: "flex"}, null]
                })}
                 
                 
@@ -82,7 +82,7 @@ export default function Navigations() {
                 <Tab.Screen 
                     name="top-5"
                     component={TopStack}
-                    options={{title: "Top-5"}}
+                    options={{title: "Top-10"}}
                 />
                 <Tab.Screen 
                     name="search"

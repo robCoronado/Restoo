@@ -33,14 +33,22 @@ export default function RegisterForm() {
 
            setLoading(true)
            const result = await registerUser (formData.email, formData.password)
-           setLoading(false)
-
-           if (!result.statusResponse) {
+            if (!result.statusResponse) {
+               setLoading(false)
                setErrorEmail(result.error)
                return
            }
 
-           navigation.navigate("account")
+           const token = await getToken()
+            const resultUser = await addDocumentWithId("users", { token }, getCurrentUser().uid)
+            if (!resultUser.statusResponse) {
+                setLoading(false)
+                setErrorEmail(result.error)
+                return
+            }       
+
+            setLoading(false)
+            navigation.navigate("account")
 
     }
 

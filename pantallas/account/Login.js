@@ -20,7 +20,7 @@ export default function Login() {
             <View style={styles.container}>
                 <LoginForm/>
                 <CreateAccount/>
-
+                <RecoverPassoword/>
             </View>
             <Divider style={styles.divider}/>
 
@@ -29,6 +29,23 @@ export default function Login() {
         
     )
 }
+
+
+function RecoverPassoword() {
+    const navigation = useNavigation()
+
+    return (
+        <Text 
+            style={styles.register}
+            onPress={() => navigation.navigate("recover-password")}
+        >
+            ¿Olvidaste tu contraseña?{" "}
+            <Text style={styles.btnRegister}>
+                RECUPERALA
+            </Text>
+        </Text>
+    )
+} 
 
 function CreateAccount(props){
     const navigation = useNavigation()
@@ -62,6 +79,10 @@ const styles = StyleSheet.create({
         alignSelf: "center"
     },
     btnregister:{
+        color: "#bf4d7f",
+        fontWeight: "bold"
+    },
+    btnRegister: {
         color: "#bf4d7f",
         fontWeight: "bold"
     }

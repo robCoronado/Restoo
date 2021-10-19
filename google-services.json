@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "828198496556",
+    "project_id": "restoo-adb36",
+    "storage_bucket": "restoo-adb36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828198496556:android:790f96fbe3fa51bb316489",
+        "android_client_info": {
+          "package_name": "com.roby.restoo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828198496556-op63v0ijtbkmvs2p9rlaomor66bmevqm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roby.restoo",
+            "certificate_hash": "47fe35cb831ad18d3c193504ea4e1427a7cc770d"
+          }
+        },
+        {
+          "client_id": "828198496556-d19dk0mfot3inud49flmvbnnag8l57me.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpuQtDZYkMgr9SDqXC5ife8eA827k7VFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828198496556-d19dk0mfot3inud49flmvbnnag8l57me.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "828198496556-vo2efh36q5qaun16sjlpsiemt9du0ta1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.roby.restoo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
