@@ -12,9 +12,9 @@ export default function TopStack() {
     return (
         <Stack.Navigator>
             <Stack.Screen
-                name="top-5"
+                name="top-10"
                 component={Top}
-                options={{title: "Los mejores 5"}}
+                options={{title: "Los mejores 10"}}
             />
         
         </Stack.Navigator>

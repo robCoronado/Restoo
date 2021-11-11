@@ -1,12 +1,12 @@
 import { size } from 'lodash'
 import React, {useState} from 'react'
-
 import { StyleSheet, Text, View } from 'react-native'
+import{ useNavigation } from '@react-navigation/native'
 import { Input, Button, Icon } from 'react-native-elements'
 import { validateEmail } from '../../utils/Helpers'
-import { registerUser} from '../../utils/actions'
 
-import{ useNavigation } from '@react-navigation/native'
+
+import { getToken, registerUser, addDocumentWithId, getCurrentUser} from '../../utils/actions'
 import Loading from '../Loading'
 
 

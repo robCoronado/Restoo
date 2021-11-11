@@ -3,9 +3,13 @@ import { ActivityIndicator, StyleSheet, Text, View } from 'react-native'
 import firebase from 'firebase/app'
 import { Avatar, Button, Rating } from 'react-native-elements'
 import moment from 'moment/min/moment-with-locales'
-import { getRestaurantReviews } from '../../utils/actions'
 import { map, size } from 'lodash'
 import { useFocusEffect } from '@react-navigation/native'
+
+import InfoUser from '../../components/Account/InfoUser'
+import { getRestaurantReviews, getCurrentUser } from '../../utils/actions'
+
+
 
 
 
@@ -71,13 +75,16 @@ export default function ListReviews({ navigation, idRestaurant }) {
 }
 
 function Review({ reviewDocument }) {
-    const { title, review, createAt, avatarUser, rating } = reviewDocument 
+    const { title, review, createAt, avatarUser, rating, user} = reviewDocument 
     const createReview = new Date(createAt.seconds * 1000)
+    
     
 
     return (
         <View style={styles.viewReview}>
+           
             <View style={styles.imageAvatar}>
+                
                 <Avatar
                     renderPlaceholderContent={<ActivityIndicator color="#fff"/>}
                     size="large"
@@ -91,7 +98,9 @@ function Review({ reviewDocument }) {
                 />
                     
             </View>
+             
             <View style={styles.viewInfo}>
+                
                 <Text style={styles.reviewTitle}>{title}</Text>
                 <Text style={styles.reviewText}>{review}</Text>
                 <Rating

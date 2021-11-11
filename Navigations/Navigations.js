@@ -27,7 +27,7 @@ export default function Navigations() {
                     iconName = "heart-outline"                    
                     break;
             
-                case "top-5":
+                case "top-10":
                     iconName = "star-outline"                    
                     break;
             
@@ -80,7 +80,7 @@ export default function Navigations() {
                     options={{title: "Favoritos"}}
                 />
                 <Tab.Screen 
-                    name="top-5"
+                    name="top-10"
                     component={TopStack}
                     options={{title: "Top-10"}}
                 />

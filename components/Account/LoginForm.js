@@ -6,6 +6,7 @@ import{ useNavigation } from '@react-navigation/native'
 import * as GoogleSignIn from 'expo-google-sign-in'
 import * as firebase from 'firebase'
 
+
 import Loading from '../Loading'
 import { validateEmail } from '../../utils/Helpers'
 import { lodingwithEmailAndPassword } from '../../utils/actions'
@@ -35,8 +36,8 @@ export default function LoginForm() {
             }
             const { type, user } = await GoogleSignIn.signInAsync()
             if (type === "success") {
-                onSignIn(user)
-                setLoading(false)
+                onSignIn(user) 
+                setLoading(false)                              
                 return true
                 
             } else {
@@ -49,6 +50,7 @@ export default function LoginForm() {
             Alert.alert(error.message)
             return { error: true }
         }
+        
         
     }
       
@@ -68,7 +70,7 @@ export default function LoginForm() {
                         .signInWithCredential(credential)
                         .then(() => {
                             setLoading(false)
-                            navigation.navigate("restaruantss")
+                            
                         })
                         .catch(function (error) {
                             setLoading(false)

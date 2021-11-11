@@ -378,8 +378,8 @@ Notifications.setNotificationHandler({
         console.log(notification)
     })  
     return () => {
-        Notifications.removeNotificationSubscription(notificationListener)
-        Notifications.removeNotificationSubscription(responseListener)
+        Notifications.removeNotificationSubscription(notificationListener.current)
+        Notifications.removeNotificationSubscription(responseListener.current)
     }
  }
 
@@ -387,7 +387,7 @@ export const sendPushNotification = async(message) => {
     let response = false
     await fetch("https://exp.host/--/api/v2/push/send", {
       method: "POST",
-      headers: {
+      headers: {          
         Accept: "application/json",
         "Accept-encoding": "gzip, deflate",
         "Content-Type": "application/json",
